@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DripCheck AI — Gizlilik Politikası</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0D0D0D;
+      color: #F5F5F5;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+      line-height: 1.7;
+    }
+    .header {
+      border-bottom: 1px solid #2C2C2C;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: #E8D5B0; flex-shrink: 0; }
+    .header a {
+      color: #8A8A8A;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: auto;
+    }
+    .header a:hover { color: #E8D5B0; }
+    .header span { font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: 32px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .meta { color: #8A8A8A; font-size: 13px; margin-bottom: 48px; }
+    h2 {
+      font-size: 18px; font-weight: 700; margin: 40px 0 12px;
+      color: #E8D5B0; letter-spacing: 0.3px;
+    }
+    p { color: #C0C0C0; font-size: 15px; margin-bottom: 16px; }
+    ul { color: #C0C0C0; font-size: 15px; padding-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+    li::marker { color: #E8D5B0; }
+    strong { color: #F5F5F5; }
+    a { color: #E8D5B0; }
+    .highlight {
+      background: #1A1A1A;
+      border-left: 3px solid #E8D5B0;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    .highlight p { margin: 0; color: #E8D5B0; font-weight: 500; }
+    footer {
+      border-top: 1px solid #2C2C2C;
+      padding: 32px 24px;
+      text-align: center;
+      color: #4A4A4A;
+      font-size: 13px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="dot"></div>
+    <span>DRIPCHECK</span>
+    <a href="index.html">← Geri</a>
+  </div>
+
+  <div class="container">
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 2 Haziran 2026 &nbsp;·&nbsp; Türkçe</p>
+
+    <div class="highlight">
+      <p>DripCheck, fotoğraflarını yalnızca analiz amacıyla işler. Görsellerini satmaz, paylaşmaz veya reklam amacıyla kullanmayız.</p>
+    </div>
+
+    <h2>1. Topladığımız Bilgiler</h2>
+    <p>DripCheck AI uygulamasını kullandığınızda aşağıdaki veriler işlenebilir:</p>
+    <ul>
+      <li><strong>Kombin fotoğrafları:</strong> Analiz için yüklediğiniz görüntüler. Bu görüntüler yalnızca Gemini Vision API'ye iletilir ve sunucularımızda saklanmaz.</li>
+      <li><strong>Stil tercihleri:</strong> Onboarding sırasında seçtiğiniz kategori ve tercihler — yalnızca cihazınızda, SharedPreferences aracılığıyla saklanır.</li>
+      <li><strong>Kullanım verileri:</strong> Uygulama kararlılığını iyileştirmek için anonim çökme raporları toplanabilir.</li>
+      <li><strong>Abonelik durumu:</strong> RevenueCat üzerinden yönetilen satın alma bilgileri. Ödeme detayları App Store tarafından işlenir; biz kart bilgilerinize erişemeyiz.</li>
+    </ul>
+
+    <h2>2. Fotoğraflarınız Nasıl İşlenir?</h2>
+    <p>Yüklediğiniz fotoğraflar şu adımlardan geçer:</p>
+    <ul>
+      <li>Fotoğraf cihazınızdan Base64 formatına dönüştürülür.</li>
+      <li>Google Gemini Vision API'ye şifreli (HTTPS) bağlantı üzerinden gönderilir.</li>
+      <li>API'den analiz sonucu alındıktan sonra görüntü verisi işlem dışı bırakılır.</li>
+      <li>Fotoğrafınız bizim sunucularımızda <strong>kesinlikle saklanmaz</strong>.</li>
+    </ul>
+
+    <h2>3. Verilerin Paylaşımı</h2>
+    <p>Kişisel verilerinizi üçüncü taraflarla <strong>satmayız</strong>. Yalnızca şu servis sağlayıcılarla veri paylaşımı gerçekleşir:</p>
+    <ul>
+      <li><strong>Google Gemini API:</strong> Görüntü analizi için. Google'ın gizlilik politikası geçerlidir.</li>
+      <li><strong>RevenueCat:</strong> Abonelik yönetimi için. Ödeme verileri App Store'da kalır.</li>
+      <li><strong>Apple App Store:</strong> Uygulama dağıtımı ve satın alma işlemleri için.</li>
+    </ul>
+    <p>Yasal zorunluluk (mahkeme kararı vb.) olmadıkça verilerinizi kimseyle paylaşmayız.</p>
+
+    <h2>4. Veri Saklama</h2>
+    <p>Stil tercihleri ve uygulama ayarları yalnızca cihazınızda saklanır. Uygulamayı sildiğinizde veya "Tüm Verileri Sil" seçeneğini kullandığınızda bu veriler tamamen kaldırılır. Sunucu tarafında kullanıcıya özgü kayıt tutulmaz.</p>
+
+    <h2>5. Çocukların Gizliliği</h2>
+    <p>DripCheck, 13 yaşın altındaki kişilere yönelik değildir. Bilerek 13 yaşın altındaki bireylerden veri toplamayız. Böyle bir durum fark edilirse söz konusu veriler derhal silinir.</p>
+
+    <h2>6. Güvenlik</h2>
+    <p>Tüm API iletişimleri TLS/HTTPS şifrelemesi ile korunur. Cihaz üzerindeki veriler iOS'un Keychain ve sandboxing mekanizmalarıyla izole edilir. API anahtarları uygulama koduna gömülmez; compile-time injection ile sağlanır.</p>
+
+    <h2>7. Haklarınız</h2>
+    <p>KVKK (Kişisel Verilerin Korunması Kanunu) kapsamında şu haklara sahipsiniz:</p>
+    <ul>
+      <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li>İşlenen verilere ilişkin bilgi talep etme</li>
+      <li>Verilerin silinmesini talep etme</li>
+      <li>İşlemenin amacına aykırı kullanılması durumunda itiraz etme</li>
+    </ul>
+    <p>Talepleriniz için: <a href="mailto:movlanovbahtiyar@gmail.com">movlanovbahtiyar@gmail.com</a></p>
+
+    <h2>8. Politika Değişiklikleri</h2>
+    <p>Bu politikayı güncelleyebiliriz. Önemli değişiklikler uygulama içi bildirim veya App Store güncelleme notları aracılığıyla duyurulur. Güncel politika her zaman bu sayfada yayınlanır.</p>
+
+    <h2>9. İletişim</h2>
+    <p>Gizlilik politikamıza ilişkin soru ve talepleriniz için:<br>
+    <strong>E-posta:</strong> <a href="mailto:movlanovbahtiyar@gmail.com">movlanovbahtiyar@gmail.com</a><br>
+    <strong>Uygulama:</strong> DripCheck AI — iOS<br>
+    <strong>Geliştirici:</strong> Bahtiyar Movlanov</p>
+  </div>
+
+  <footer>
+    © 2026 DripCheck AI · <a href="privacy-policy.html">Gizlilik Politikası</a> · <a href="terms.html">Kullanım Koşulları</a>
+  </footer>
+
+</body>
+</html>
